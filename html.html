@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Meta Tags -->
-    <meta name="viewport" name='viewport', content='viewport-fit=cover, width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
+    <meta name="viewport" name='viewport' , content='viewport-fit=cover, width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
 
 
     <!-- Font Importings -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+
+
 
     <!-- JS Importings -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -16,7 +19,7 @@
     <!-- 3rd Party Resources -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animate.css">
     <!-- Bussines Resources -->
     <link rel="stylesheet" href="./css/css.css">
@@ -25,162 +28,176 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Propuesta Quantum Coding</title>
 </head>
+
 <body>
+    <div id="hs-back">
+        <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
+    </div>
     <header>
-        <div id="menu-container">
-            <div id="head" class="animated">
-                <div id="head-profile">
-                    <a href="#">
-                        <span class="profile-image">
-                            <img src="./assets/profile.jpg" alt="" width="100%" height="100%">
-                        </span>
-                        <span class="profile-text">
-                            <p>Gary Valverde Hampton</p>
-                        </span>
-                    </a>
+        <div id="hs-head">
+            <div id="hs-map"></div>
+        </div>
+        <div id="hs-animation">
+            <canvas id="animation"></canvas>
+        </div>
+        <div id="hs-head-over">
+            <div id="hs-box">
+                <div id="hs-text">
+                    <h1>La Terminal</h1>
+                    <p>Soluciones de transporte que conectan a los costarricenses</p>
+                    <button type="button" class="btn btn-custom">Entidades Juridicas</button>
                 </div>
-                <ul id="head-buttons">
-                    <a href="#">
-                        <li class="head-button">
-                            <i class="head-button-icon fas fa-lg fa-home"></i>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="head-button">
-                            <i class="head-button-icon fas fa-lg fa-credit-card"></i>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="head-button">
-                            <i class="head-button-icon fas fa-lg fa-comment"></i>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="head-button">
-                            <i class="head-button-icon fas fa-lg fa-cog"></i>
-                        </li>
-                    </a>
-                </ul>
+                <div id="hs-tarjeta">
+                    <h2>¿Ingresas por primera vez?</h2>
+                    <div class="form-group">
+                        <label class="col-form-label col-form-label-sm" for="inputSmall">Correo Electrónico</label>
+                        <input class="form-control form-control-sm" type="text" id="inputSmall">
+                        <label class="col-form-label col-form-label-sm" for="inputSmall">Contraseña</label>
+                        <input class="form-control form-control-sm" type="text" id="inputSmall">
+                        <button type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
             </div>
-            <div id="drawing" class="animated">
-                <ul id="drawing-list">
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-book"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Administracion</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-cogs"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Configuracion</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li class="drawing-list-item">
-                            <span class="drawing-icon">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            <span class="drawing-text">
-                                <p>Mi Informacion Personal</p>
-                            </span>
-                        </li>
-                    </a>
-                </ul>
+        </div>
+        <div id="hs-logo">
+            <div id="logo">
+                <img src="https://i.imgur.com/Q4lljkJ.png" alt="">
             </div>
+            <div id="buttons">
+                <a href="#">Iniciar Sesión</a>
+                <span>•</span>
+                <a href="#">Registrarse</a>
+            </div>
+        </div>
+        <div id="hs-tech">
+            <ul align="center">
+                <li>
+                    <img src="./assets/microsoft.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/jquery.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/bootstrap.png" alt="">
+                </li>
+                <li>
+                    <img src="./assets/sqlserver.png" alt="">
+                </li>
+            </ul>
         </div>
     </header>
-    <div id="opener">
-        <i class="head-button-icon fas fa-bars"></i>
-    </div>
-    <div id="content-wrap">
-        <div id="content">
-            <div id="map-wrap">
-                <div id="map"></div>
-            </div>
-            <h1>Content</h1>
+    <main class="container">
+        <div class="row title" align="center">
+            <h1>Beneficios</h1>
         </div>
-    </div>
-    
+        <div id="hs-services" class="row">
+            <ul align="center">
+                <li id="hs-service">
+                    <div id="hs-service-icon">
+                        <i class="fas fa-credit-card fa-3x"></i>
+                    </div>
+                    <div id="hs-service-content">
+                        <h1>Tarjetas</h1>
+                        <p>
+                            Con nuestras tarjetas nunca mas deberas portar el problematico efectivo para el uso de rutas y estacionamiento.
+                        </p>
+                    </div>
+                </li>
+                <li id="hs-service">
+                    <div id="hs-service-icon">
+                        <i class="fas fa-car fa-3x"></i>
+                    </div>
+                    <div id="hs-service-content">
+                        <h1>Estacionamiento</h1>
+                        <p>
+                            Ofrecemos el servicio de estacionamientos para clientes en nuestras instalaciones.
+                        </p>
+                    </div>
+                </li>
+                <li id="hs-service">
+                    <div id="hs-service-icon">
+                        <i class="fas fa-tags fa-3x"></i>
+                    </div>
+                    <div id="hs-service-content">
+                        <h1>Descuentos</h1>
+                        <p>
+                            Ofrecemos descuentos a estudiantes, extranjeros y personas de condicion especial.
+                        </p>
+                    </div>
+                </li>
+                <li id="hs-service">
+                    <div id="hs-service-icon">
+                        <i class="fas fa-globe fa-3x"></i>
+                    </div>
+                    <div id="hs-service-content">
+                        <h1>Plataforma Virtual</h1>
+                        <p>
+                            Todos nuestros servicios estan disponibles en nuestra plataforma virtual.
+                        </p>
+                    </div>
+                </li>
+                <li id="hs-service">
+                    <div id="hs-service-icon">
+                        <i class="fas fa-comment fa-3x"></i>
+                    </div>
+                    <div id="hs-service-content">
+                        <h1>Atencion al cliente</h1>
+                        <p>
+                            Nuestro objetivo es ofrecer un servicio justo y sobre los estandares de nuestros clientes. Estamos abiertos a cualquier tipo de sugerencia o queja.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row title" align="center">
+            <h1>Rutas Activas</h1>
+        </div>
+        <div id="hs-rutas" class="row">
+            <div id="hs-tabla">
+                <div id="coming-soon">
+                    <i class="fas fa-hourglass fa-5x"></i>
+                    <h1>Coming Soon</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="hs-social">
+
+        </div>
+        <div id="hs-contact">
+
+        </div>
+        <div id="hs-rights">
+            <div id="hs-copyright">
+                <p>Copyright © 2018 La Terminal All Rights Reserved. Powered by Quantum Coding.</p>
+            </div>
+            <div id="hs-payment">
+                <ul>
+                    <li>
+                        <i class="fab fa-cc-visa fa-3x"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-cc-mastercard fa-3x"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-cc-amex fa-3x"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-cc-paypal fa-3x"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/hs-animation.js"></script>
     <script src="./js/js.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNcw_XTpjJEOK7iWvfcfqrQKKKW6BmPxg&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNcw_XTpjJEOK7iWvfcfqrQKKKW6BmPxg&callback=initMap" async
+        defer></script>
 </body>
+
 </html>
