@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Meta Tags -->
-    <meta name="viewport" name='viewport' , content='viewport-fit=cover, width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
 
     <!-- Font Importings -->
@@ -54,7 +54,9 @@
                         <input class="form-control form-control-sm" type="text" id="inputSmall">
                         <label class="col-form-label col-form-label-sm" for="inputSmall">Contraseña</label>
                         <input class="form-control form-control-sm" type="text" id="inputSmall">
-                        <button type="button" class="btn btn-primary">Ingresar</button>
+                        <div align="right">
+                            <button type="button" class="btn btn-custom" align="right">Ingresar</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,12 +72,18 @@
             </div>
         </div>
         <div id="hs-tech">
-            <ul align="center">
+            <ul class="scroll" align="center">
+                <li>
+                    <img src="./assets/twilio.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/sendgrid.png" alt="">
+                </li>
                 <li>
                     <img src="./assets/microsoft.png" alt="">
                 </li>
                 <li>
-                    <img src="./assets/jquery.png" alt="">
+                    <img src="./assets/jquery.svg" alt="">
                 </li>
                 <li>
                     <img src="./assets/bootstrap.png" alt="">
@@ -132,7 +140,7 @@
                     <div id="hs-service-content">
                         <h1>Plataforma Virtual</h1>
                         <p>
-                            Todos nuestros servicios estan disponibles en nuestra plataforma virtual.
+                            Todos nuestros servicios estan disponibles en nuestra plataforma virtual para un facil acceso desde cualquier lugar.
                         </p>
                     </div>
                 </li>
@@ -143,7 +151,7 @@
                     <div id="hs-service-content">
                         <h1>Atencion al cliente</h1>
                         <p>
-                            Nuestro objetivo es ofrecer un servicio justo y sobre los estandares de nuestros clientes. Estamos abiertos a cualquier tipo de sugerencia o queja.
+                            Nuestro objetivo es ofrecer un servicio justo y al alcance del estandar de nuestros clientes. Por lo que estamos abiertos a cualquier tipo de sugerencia o queja.
                         </p>
                     </div>
                 </li>
@@ -163,10 +171,72 @@
     </main>
     <footer>
         <div id="hs-social">
-
+            <div id="hs-social-hearth">
+                <div>
+                    <i class="fas fa-heart fa-3x pulsate"></i>
+                </div>
+            </div>
+            <div class="hs-social-buttons hs-social-left">
+                <ul>
+                    <li>
+                        <i class="fab fa-facebook-square fa-3x"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="hs-social-buttons hs-social-right">
+                    <ul>
+                        <li>
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div id="hs-contact">
-
+        <div id="hs-contacts">
+            <div class="title" align="center">
+                <h1>Contacto</h1>
+            </div>
+            <div>
+                <ul align="center">
+                    <li id="hs-contact">
+                        <div id="hs-contact-content">
+                            <h1>Norte</h1>
+                            <p><span>Telefono:</span> +506 7020-0902</p>
+                            <p><span>Ubicacion:</span> Barrio Aranjuez</p>
+                            <p><span>Correo:</span> oeste@laterminal.co.cr</p>
+                        </div>
+                    </li>
+                    <li id="hs-contact">
+                        <div id="hs-contact-content">
+                            <h1>Este</h1>
+                            <p><span>Telefono:</span> +506 7020-0902</p>
+                            <p><span>Ubicacion:</span> Costado de Plaza Gonzales Viquez</p>
+                            <p><span>Correo:</span> este@laterminal.co.cr</p>
+                        </div>
+                    </li>
+                    <li id="hs-contact">
+                        <div id="hs-contact-content">
+                            <h1>Oeste</h1>
+                            <p><span>Telefono:</span> +506 7020-0902</p>
+                            <p><span>Ubicacion:</span> Antigua Municipalidad de San Jose</p>
+                            <p><span>Correo:</span> oeste@laterminal.co.cr</p>
+                        </div>
+                    </li>
+                    <li id="hs-contact">
+                        <div id="hs-contact-content">
+                            <h1>Sur</h1>
+                            <p><span>Telefono:</span> +506 7020-0902</p>
+                            <p><span>Ubicacion:</span> Antigua Estacion de Trenes del Pacifico</p>
+                            <p><span>Correo:</span> sur@laterminal.co.cr</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div id="hs-rights">
             <div id="hs-copyright">
