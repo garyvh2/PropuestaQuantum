@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta name="viewport" name='viewport' , content='viewport-fit=cover, width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'>
 
 
     <!-- Font Importings -->
@@ -49,15 +49,17 @@
                 </div>
                 <div id="hs-tarjeta">
                     <h2>¿Ingresas por primera vez?</h2>
-                    <div class="form-group">
-                        <label class="col-form-label col-form-label-sm" for="inputSmall">Correo Electrónico</label>
-                        <input class="form-control form-control-sm" type="text" id="inputSmall">
-                        <label class="col-form-label col-form-label-sm" for="inputSmall">Contraseña</label>
-                        <input class="form-control form-control-sm" type="text" id="inputSmall">
-                        <div align="right">
-                            <button type="button" class="btn btn-custom" align="right">Ingresar</button>
+                    <form action="">
+                        <div class="form-group">
+                            <label class="col-form-label col-form-label-sm" for="inputSmall">Correo Electrónico</label>
+                            <input id="email" name="email" class="form-control form-control-sm" type="text" id="inputSmall">
+                            <label class="col-form-label col-form-label-sm" for="inputSmall">Contraseña</label>
+                            <input id="password" name="password" class="form-control form-control-sm" type="password" id="inputSmall">
+                            <div align="right">
+                                <button type="button" class="btn btn-custom" align="right">Ingresar</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

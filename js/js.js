@@ -266,28 +266,28 @@ function initMap() {
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
 }
-var addJustMetaViewPorts = function (viewheight, viewwidth) {
-    setTimeout(function () {
-        var viewport = $("meta[name=viewport]");
-        viewport.attr("content", "height=" + viewheight + "px, width=" + viewwidth + "px, initial-scale=1.0");
-    }, 300);
-}
 
 
-
-var viewheight;
-var viewwidth;
-$(window).on("orientationchange", function() {
-    var tm = viewwidth;
-    viewwidth = viewheight;
-    viewheight = tm;
-    addJustMetaViewPorts(viewheight, viewwidth);
-});
 
 $(document).ready(function () {
-    viewheight = $(window).height();
-    viewwidth = $(window).width();
+    var addJustMetaViewPorts = function (vh, vw) {
+        setTimeout(function () {
+            var viewport = $("meta[name=viewport]");
+            viewport.attr("content", "viewport-fit=cover, height=" + vh + "px, width=" + vw + "px, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no");
+        }, 300);
+    }
+
+    var viewheight = $(window).height();
+    var viewwidth = $(window).width();
     addJustMetaViewPorts(viewheight, viewwidth);
+
+    $(window).on("orientationchange", function() {
+        var tm = viewwidth;
+        viewwidth = viewheight;
+        viewheight = tm;
+        addJustMetaViewPorts(viewheight, viewwidth);
+    });
+
 
     var navBottom = $(window).height();
 
@@ -302,7 +302,6 @@ $(document).ready(function () {
     };
 
     scrollTopTop();
-    addJustMetaViewPorts();
 
     $(window).scroll(function () {
         scrollTopTop();
